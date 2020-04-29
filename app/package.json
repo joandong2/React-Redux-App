@@ -7,7 +7,10 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
+<<<<<<< HEAD
     "bootstrap": "^4.4.1",
+=======
+>>>>>>> 8191b5c0acdfd4ca6d9f5448c75208cd3c06a154
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",

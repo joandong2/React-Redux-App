@@ -23,7 +23,11 @@ export const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 isFetching: false,
+<<<<<<< HEAD
                 error: action.payload,
+=======
+                error: "There was an error.",
+>>>>>>> 8191b5c0acdfd4ca6d9f5448c75208cd3c06a154
             };
         default:
             return state;

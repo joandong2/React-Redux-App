@@ -2,11 +2,16 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { getUser } from "../actions";
 
+<<<<<<< HEAD
 const User = ({ getUser, isFetching, user, error }) => {
+=======
+const User = ({ getUser, user, isFetching, error }) => {
+>>>>>>> 8191b5c0acdfd4ca6d9f5448c75208cd3c06a154
     useEffect(() => {
         getUser();
     }, [getUser]);
 
+<<<<<<< HEAD
     const submitHandler = (e) => {
         e.preventDefault();
         //console.log(e.target.gender.value);
@@ -17,6 +22,10 @@ const User = ({ getUser, isFetching, user, error }) => {
     console.log("User", user);
 
     if (user !== null) {
+=======
+    if (user !== null) {
+        console.log("user", user);
+>>>>>>> 8191b5c0acdfd4ca6d9f5448c75208cd3c06a154
         return (
             <>
                 <h1>
@@ -27,6 +36,7 @@ const User = ({ getUser, isFetching, user, error }) => {
                         " " +
                         user.name.last}
                 </h1>
+<<<<<<< HEAD
                 <form onSubmit={submitHandler}>
                     <div className="form-group">
                         <span>Gender: </span>
@@ -87,6 +97,14 @@ const User = ({ getUser, isFetching, user, error }) => {
     }
 
     return <>{error}</>;
+=======
+                <button onClick={getUser}>Load New User</button>
+            </>
+        );
+    } else {
+        return <button onClick={getUser}>Load New User</button>;
+    }
+>>>>>>> 8191b5c0acdfd4ca6d9f5448c75208cd3c06a154
 };
 
 // hook up the connect to our store
