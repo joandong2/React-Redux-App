@@ -1,5 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 body {
     font-family: "Montserrat", sans-serif;
+    background: #ececec;
+}
+
+.profile-container {
+    margin-top: 40px;
+}
+
+.profile-container h3 {
+    font-family: "Permanent Marker", cursive;
+    margin-bottom: 20px;
+}
+
+.profile {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ececec;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.profile p {
+    margin-bottom: 5px;
+}
+
+.profile svg {
+    margin-right: 7px;
+}
+
+.profile .space {
+    margin-left: 15px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 720px;
+    }
 }
